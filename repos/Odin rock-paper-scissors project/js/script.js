@@ -21,3 +21,12 @@ function getComputerChoice() {
   }
 }
 console.log(getComputerChoice());
+
+// Write the logic to get the human choice
+
+// a. Make a function called getHumanChoice
+// b. Ask the person: "rock, paper, scissors?" (use prompt)
+// c. Save what the person typed in a variable called humanChoice
+// d. Change the letters in humanChoice to lowerCase
+// f. RETURN humanChoice
+// g. END FUNCTION
