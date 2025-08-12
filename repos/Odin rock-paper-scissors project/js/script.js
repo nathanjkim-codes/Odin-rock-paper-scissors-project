@@ -1,13 +1,13 @@
 // Write the logic to get the computer choice
 
 // a. GENERATE random number between 0 and 2 using Math.random
-// b. IF random number is 0 THEN
-//      RETURN "rock"
-//    ELSE IF random number is 1 THEN
-//      RETURN "paper"
-//   ELSE
-//      RETURN "scissors"
-// END FUNCTION
+// b. If random number is 0 THEN
+//      return "rock"
+//    Else if random number is 1 THEN
+//      return "paper"
+//   Else
+//      return "scissors"
+// End function
 
 function getComputerChoice() {
   let randomNum = Math.floor(Math.random() * 3);
@@ -28,8 +28,8 @@ console.log(getComputerChoice());
 // b. Ask the person: "rock, paper, scissors?" (use prompt)
 // c. Save what the person typed in a variable called humanChoice
 // d. Change the letters in humanChoice to lowerCase
-// f. RETURN humanChoice
-// g. END FUNCTION
+// f. Return humanChoice
+// g. End function
 
 function getHumanChoice() {
   let humanChoice = prompt("rock, paper, scissors?");
@@ -39,10 +39,18 @@ console.log(getHumanChoice());
 
 // Declare the players score variables
 
-// a. Make a variable called humanScore
+// a. Create a variable called humanScore
 // b. Set humanScore to 0
 // c. Make a variable called computerScore
 // d. Set computerScore to 0
 
 let humanScore = 0;
 let computerScore = 0;
+
+// Write the logic to play a single round
+
+// a. Create a function named playRound with two parameters: humanChoice and computerChoice
+// b. Convert humanChoice to lowercase
+// c. If humanChoice equals computerChoice, return "It's a tie!"
+// d. Else if humanChoice beats computerChoice, return "You win! humanChoice beats computerChoice"
+// e. Else, return "You lose! computerChoice beats humanChoice"
