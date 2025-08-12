@@ -36,3 +36,13 @@ function getHumanChoice() {
   return humanChoice.trim().toLowerCase();
 }
 console.log(getHumanChoice());
+
+// Declare the players score variables
+
+// a. Make a variable called humanScore
+// b. Set humanScore to 0
+// c. Make a variable called computerScore
+// d. Set computerScore to 0
+
+let humanScore = 0;
+let computerScore = 0;
