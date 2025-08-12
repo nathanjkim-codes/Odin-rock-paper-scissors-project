@@ -54,3 +54,19 @@ let computerScore = 0;
 // c. If humanChoice equals computerChoice, return "It's a tie!"
 // d. Else if humanChoice beats computerChoice, return "You win! humanChoice beats computerChoice"
 // e. Else, return "You lose! computerChoice beats humanChoice"
+
+function playRound(humanChoice, computerChoice) {
+  humanChoice = humanChoice.trim().toLowerCase();
+
+  if (humanChoice === computerChoice) {
+    return "It's a tie!";
+  } else if (
+    (humanChoice === "rock" && computerChoice === "scissors") ||
+    (humanChoice === "paper" && computerChoice === "rock") ||
+    (humanChoice === "scissors" && computerChoice === "paper")
+  ) {
+    return `You win! ${humanChoice} beats ${computerChoice}`;
+  } else {
+    return `You lose! ${computerChoice} beats ${humanChoice}`;
+  }
+}
