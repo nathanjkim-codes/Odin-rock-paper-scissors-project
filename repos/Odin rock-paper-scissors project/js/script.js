@@ -30,3 +30,9 @@ console.log(getComputerChoice());
 // d. Change the letters in humanChoice to lowerCase
 // f. RETURN humanChoice
 // g. END FUNCTION
+
+function getHumanChoice() {
+  let humanChoice = prompt("rock, paper, scissors?");
+  return humanChoice.trim().toLowerCase();
+}
+console.log(getHumanChoice());
