@@ -77,3 +77,38 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+//Write the logic to play the entire game
+
+// a. // Play the whole game
+// b. Create a function playGame
+// c. Set humanScore = 0 and computerScore = 0
+// d. Repeat 5 times:
+//    a. Get human choice (prompt)
+//    b. Get computer choice (random)
+//    c. Play one round (update scores)
+// e. After 5 rounds, check who has higher score
+// f. Show "You win", "You lose", or "It's a tie"
+
+function playGame() {
+  let humanScore = 0;
+  let computerScore = 0;
+}
+
+function playRound(humanChoice, computerChoice) {
+  humanChoice = humanChoice.trim().toLowerCase();
+
+  if (humanChoice === computerChoice) {
+    console.log("It's a tie!");
+  } else if (
+    (humanChoice === "rock" && computerChoice === "scissors") ||
+    (humanChoice === "paper" && computerChoice === "rock") ||
+    (humanChoice === "scissors" && computerChoice === "rock")
+  ) {
+    humanScore++;
+    console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+  } else {
+    computerScore++;
+    console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+  }
+}
